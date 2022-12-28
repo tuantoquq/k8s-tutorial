@@ -1,0 +1,7 @@
+#file: noinspection YAMLSchemaValidation
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.application.name }}-configmap
+data:
+  DB_URL: {{ .Values.application.hellok8s.database.url }}

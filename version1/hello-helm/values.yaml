@@ -1,0 +1,12 @@
+application:
+  name: hello-k8s
+  hellok8s:
+    image: tuantoquq/hello-k8s:1.0.0
+    replicas: 3
+    message: "Building Helm Chart with helm v3!"
+    database:
+      password: "Admin123**"
+      url: "http://10.145.48.88:3306"
+  nginx:
+    replicas: 2
+    image: nginx
